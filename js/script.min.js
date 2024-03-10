@@ -190,7 +190,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeSort = document.querySelector('#close-sort');
 
     if (switchFilter && filterLeft) {
-        switchFilter.addEventListener('click', () => {
+        switchFilter.addEventListener('click', (e) => {
+            e.preventDefault();
             filterLeft.classList.add('active');
         })
 
@@ -200,7 +201,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (switchSort && catalogSort) {
-        switchSort.addEventListener('click', () => {
+        switchSort.addEventListener('click', (e) => {
+            e.preventDefault();
             catalogSort.classList.add('active');
         })
 
