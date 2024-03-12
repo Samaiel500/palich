@@ -210,4 +210,60 @@ document.addEventListener('DOMContentLoaded', function () {
             catalogSort.classList.remove('active');
         })
     }
+
+    const productNav = new Swiper(".products__swiper-nav", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        direction: 'horizontal',
+        updateOnWindowResize: true,
+
+        breakpoints: {
+            590: {
+                direction: 'vertical',
+            },
+        }
+    });
+
+    const product = new Swiper(".products__swiper", {
+        updateOnWindowResize: true,
+        thumbs: {
+            swiper: productNav,
+        },
+        navigation: {
+            nextEl: ".products__swiper-button-next-nav",
+            prevEl: ".products__swiper-button-prev-nav",
+        },
+    });
+
+    //Счетчик продукатов для добавления в корзину
+    const productMinus = document.querySelector('.products__info-count-minus');
+    const productPlus = document.querySelector('.products__info-count-plus');
+    const productInput = document.querySelector('.products__info-input');
+
+    if (productMinus && productPlus && productInput) {
+        const countPlus = () => {
+            if (productInput.value >= 1) {
+                productMinus.classList.remove('products__info-count-btn--disabled');
+            }
+            productInput.value = ++productInput.value;
+        }
+
+        const countMinus = () => {
+            if (productInput.value === "1") {
+                return;
+            }
+            if (productInput.value === "2") {
+                productMinus.classList.add('products__info-count-btn--disabled');
+            }
+            productInput.value = --productInput.value;
+        }
+
+        productPlus.addEventListener('click', event => {
+            countPlus();
+        })
+
+        productMinus.addEventListener('click', event => {
+            countMinus();
+        })
+    }
 })
