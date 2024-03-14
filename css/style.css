@@ -1438,6 +1438,29 @@ a:hover {
   font-weight: 700;
 }
 
+.notfound {
+  padding: 100px 0 10px;
+}
+.notfound__inner {
+  text-align: center;
+}
+.notfound__main-img {
+  margin-bottom: 60px;
+}
+.notfound__main-img img {
+  max-width: 100%;
+}
+.notfound__text {
+  max-width: 520px;
+  margin: 0 auto;
+  width: 100%;
+  font: 400 18px/1.7 "Fira Sans", normal;
+  color: #000;
+}
+.notfound__text-top {
+  font-size: 20px;
+}
+
 @media (max-width: 1600px) {
   .header__text span,
   .header__link--mobile-none-xs {
@@ -1617,6 +1640,19 @@ a:hover {
   }
   .btn {
     font-size: 16px;
+  }
+  .notfound {
+    padding: 20px 0 10px;
+  }
+  .notfound__main-img {
+    margin-bottom: 20px;
+  }
+  .notfound__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .notfound__text-top {
+    font-size: 18px;
   }
 }
 @media (max-width: 590px) {

@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />-->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Palich</title>
+</head>
+<body>
+<div class="layout">
+
+<header class="header">
+    <div class="header-top">
+        <div class="header__container">
+            <div class="header-top__wrap">
+                <div class="header-top__left">
+                    <a href="#" class="header-top__location header__link">
+                        <img src="./img/header/location.svg" alt="">
+                        <div class="header__text">Самара и Самарская область</div>
+                    </a>
+                </div>
+                <div class="header-top__right">
+                    <a href="#" class="header-top__mail header__link">
+                        <img src="./img/header/mail.svg" alt="">
+                        <div class="header__text header__text--under-line-red">Письмо Палычу</div>
+                    </a>
+                    <a href="#" class="header-top__phone header__link">
+                        <img src="./img/header/phone.svg" alt="">
+                        <div class="header__text header__text--under-line-red">Горячая линия<span> 8 (800) 555-81-63</span></div>
+                    </a>
+                    <a href="#" class="header-top__tel header__link">
+                        <img src="./img/header/tel.svg" alt="">
+                        <div class="header__text header__text--under-line-red">Интернет-магазин<span> +7 (846) 211-63-63</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-middle">
+        <div class="header__container">
+            <div class="header-middle__wrap">
+                
+                <div class="header-middle__mobile-menu">
+                    <div class="header-middle__mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header-middle__mobile-menu-list-wrap">
+                        <ul class="header-middle__mobile-menu-list header-middle__mobile-menu-list--show-mobile">
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img header-middle__mobile-menu-img--small">
+                                        <img src="./img/header/delivery-mob.svg" alt="">
+                                    </span>
+                                    <span>Доставка</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item header-middle__mobile-menu-img--small">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/shop-mob.svg" alt="">
+                                    </span>
+                                    <span>Магазины</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item header-middle__mobile-menu-img--small">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/percent-mob.svg" alt="">
+                                    </span>
+                                    <span>Акции</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="header-middle__mobile-menu-list">
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-1.svg" alt="">
+                                    </span>
+                                    <span>Замороженные продукты</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-2.svg" alt="">
+                                    </span>
+                                    <span>Готовые блюда</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-3.svg" alt="">
+                                    </span>
+                                    <span>Пироги, выпечка, хлеб</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-4.svg" alt="">
+                                    </span>
+                                    <span>Торты и пирожные</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-5.svg" alt="">
+                                    </span>
+                                    <span>Колбасы и деликатесы</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-6.svg" alt="">
+                                    </span>
+                                    <span>Сыры, масло</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-7.svg" alt="">
+                                    </span>
+                                    <span>Шоколад и конфеты</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-8.svg" alt="">
+                                    </span>
+                                    <span>Мороженое и сорбеты</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-9.svg" alt="">
+                                    </span>
+                                    <span>Напитки</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-10.svg" alt="">
+                                    </span>
+                                    <span>Чай, кофе</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                        <img src="./img/header/nav-11.svg" alt="">
+                                    </span>
+                                    <span>Каши, суперфуды</span>
+                                </a>
+                            </li>
+                            <li class="header-middle__mobile-menu-item">
+                                <a class="header-middle__mobile-menu-link" href="#">
+                                    <span class="header-middle__mobile-menu-img">
+                                    </span>
+                                    <span>Весь каталог</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <a href="#" class="header-middle__logo logo">
+                    <img src="./img/header/main-logo.svg" alt="">
+                </a>
+
+                <a href="#" class="header__link header-middle__company header__link--white">
+                    <img src="./img/header/company.svg" alt="">
+                    <div class="header__text header__text--under-line-white">О компании</div>
+                </a>
+
+                <div class="header__search search">
+                    <a href="#" class="header__search-icon-mobile">
+                        <img src="./img/header/search.svg" alt="">
+                    </a>
+                    <input type="text" class="search__input search__input--mobile-none" name="search" placeholder="Поиск">
+                </div>
+
+                <div class="header-middle__menu">
+                    <a href="#" class="header__link header__link--white header__link--mobile-none-xs">
+                        <img src="./img/header/delivery.svg" alt="">
+                        <div class="header__text header__text--under-line-white">Доставка</div>
+                    </a>
+                    <a href="#" class="header__link header__link--white header__link--mobile-none-xs">
+                        <img src="./img/header/company.svg" alt="">
+                        <div class="header__text header__text--under-line-white">Магазины</div>
+                    </a>
+                    <a href="#" class="header__link header__link--white header__link--mobile-none-xs">
+                        <img src="./img/header/percent.svg" alt="">
+                        <div class="header__text header__text--under-line-white">Акции</div>
+                    </a>
+                    <a href="#" class="header__link header__link--white">
+                        <img src="./img/header/lk.svg" alt="">
+                        <div class="header__text header__text--under-line-white">Личный кабинет</div>
+                    </a>
+                </div>
+
+                <a href="" class="header__card header-card">
+                    <img src="./img/header/card.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="header__container">
+            <div class="header-bottom__menu-wrap">
+                <ul class="header-bottom__menu">
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <div class="header-bottom__menu-img">
+                                <img src="./img/header/nav-1.svg" alt="">
+                            </div>
+                            <span class="header__text header-bottom__menu-text">Замороженные продукты</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-2.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Готовые<br> блюда</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-3.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Пироги, выпечка, хлеб</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-4.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Торты и пирожные</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-5.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Колбасы и деликатесы</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-6.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Сыры,<br> масло</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-7.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Шоколад и конфеты</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-8.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Мороженое и сорбеты</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-9.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Напитки</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-10.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Чай, кофе</span>
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">
+                            <span class="header-bottom__menu-img">
+                                <img src="./img/header/nav-11.svg" alt="">
+                            </span>
+                            <span class="header__text header-bottom__menu-text">Каши, суперфуды</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="content">
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__inner">
+            <a href="" class="breadcrumbs__item">Главная страница</a>
+            <a href="" class="breadcrumbs__item">404</a>
+        </div>
+    </div>
+</div>
+
+<div class="notfound">
+    <div class="container">
+        <div class="notfound__inner">
+            <div class="notfound__main-img">
+                <img src="./img/404.png" alt="">
+            </div>
+            <div class="notfound__text">
+                <p class="notfound__text-top">Неправильно набран адрес,
+                    или такой страницы на сайте больше не существует</p>
+                <p class="notfound__text-bottom">Вернитесь на <a href="./index.html">главную</a> или воспользуйтесь картой сайта.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__column footer__column--left">
+                    <div class="footer__logo logo">
+                        <img src="./img/header/main-logo.svg" alt="">
+                    </div>
+                    <div class="footer__tm">
+                        Правообладателем ТМ «У Палыча» является ООО «Самарский Трактир». ИНН 6315502936 | ОГРН 1026300960817
+                    </div>
+                    <a href="#" class="footer__btn">Франшиза</a>
+                </div>
+
+                <div class="footer__column">
+                    <div class="footer__menu-title">О компании</div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">О нас</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">История компании</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Магазины</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Программа лояльности «Клуб Друзей «У Палыча»</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Правила программы лояльности</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Политика защиты и обработки персональных данных участников программы лояльности</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <div class="footer__menu-title">Интернет-магазин</div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Акции</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Мобильное приложение</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Промокоды и купоны</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Как сделать заказ</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Условия доставки</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Условия оплаты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Политика защиты и обработки персональных данных интернет-магазина</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column footer__column--right">
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-wrap">
+                            <a href="tel:+88005558163" class="footer__contacts-link">
+                                <img src="./img/footer/phone.svg" alt="">
+                                <span>800 555-8-163</span>
+                            </a>
+                            <div class="footer__contacts-subtitle">Горячая линия торговой марки</div>
+                        </div>
+                        <div class="footer__contacts-wrap">
+                            <a href="tel:+78466363" class="footer__contacts-link">
+                                <img src="./img/footer/phone.svg" alt="">
+                                <span>+7 (846) 211-63-63</span>
+                            </a>
+                            <div class="footer__contacts-subtitle">Интернет-магазин</div>
+                        </div>
+                        <div class="footer__contacts-wrap">
+                            <a href="mailto:e-com@sampalich.ru" class="footer__contacts-link">
+                                <img src="./img/footer/mail.svg" alt="">
+                                <span>e-com@sampalich.ru</span>
+                            </a>
+                            <div class="footer__contacts-subtitle">Интернет-магазин</div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__btn footer__btn--icon">
+                        <img src="./img/footer/mail.svg" alt="">
+                        <span>Письмо Палычу</span>
+                    </a>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-item">
+                            <img src="./img/footer/tg.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__social-item">
+                            <img src="./img/footer/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__social-item">
+                            <img src="./img/footer/yt.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__mobile-app">
+                        <a href="#" class="footer__mobile-app-item">
+                            <img src="./img/footer/apple-app.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__mobile-app-item">
+                            <img src="./img/footer/android-app.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copyright">© У Палыча, 1991 - 2024 год, все права защищены</div>
+                <a href="#" class="footer__copyright footer__copyright--link">Оператор интернет-магазина ООО «Вертикаль», ИНН 6318011774, ОГРН 1166313061507</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<!--<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/script.min.js"></script>
+</body>
+</html>
