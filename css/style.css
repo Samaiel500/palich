@@ -40,6 +40,20 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueCyr.woff") format("wpff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueCyr.woff") format("wpff"), url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -106,6 +120,13 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.subtitle {
+  font: 700 22px/1.4 "Open Sans", normal;
+  letter-spacing: -0.03em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
 .billet {
   position: relative;
   max-width: 240px;
@@ -140,20 +161,35 @@ a:hover {
   background: #a70230;
   font: 400 18px/1 "Fira Sans", normal;
   color: #FFFFFF;
+  display: inline-block;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 .btn--border {
   border-radius: 30px;
 }
 .btn:hover {
   color: #FFFFFF;
+  background: #af0430;
 }
 
 .banner {
   padding: 15px 0;
 }
 .banner__img {
+  display: block;
+}
+.banner__img img {
   max-width: 100%;
   width: 100%;
+}
+
+.list {
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+.list__item {
+  list-style: disc;
 }
 
 .header__container {
@@ -280,6 +316,7 @@ a:hover {
 }
 .header-middle__mobile-menu-list-wrap:before {
   content: "";
+  cursor: pointer;
   width: 70px;
   height: 50px;
   position: absolute;
@@ -1461,6 +1498,56 @@ a:hover {
   font-size: 20px;
 }
 
+.about {
+  padding: 15px 0;
+}
+.about__text {
+  font: 400 16px/1.6 "HelveticaNeueCyr", normal;
+  color: #000;
+}
+.about__text a {
+  font-weight: 700;
+}
+.about__wrap-btn {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.delivery {
+  padding: 15px 0;
+}
+.delivery__wrap-btn {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 10px;
+}
+.delivery__btn {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.delivery__List {
+  font: 400 18px/1.7 "Fira Sans", normal;
+  color: #000;
+}
+.delivery__accordion-info {
+  padding: 30px 0;
+}
+.delivery__accordion-map-img {
+  margin-bottom: 20px;
+}
+.delivery__accordion-map-img img {
+  max-width: 100%;
+}
+.delivery__accordion-text {
+  font: 400 16px/1.6 "HelveticaNeueCyr", sans-serif;
+  color: #000;
+}
+
 @media (max-width: 1600px) {
   .header__text span,
   .header__link--mobile-none-xs {
@@ -1684,6 +1771,9 @@ a:hover {
   }
 }
 @media (max-width: 575.98px) {
+  .title {
+    font-size: 26px;
+  }
   .logo img {
     width: 200px;
   }

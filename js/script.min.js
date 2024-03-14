@@ -181,6 +181,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     } );
 
+    $( function() {
+        $( "#accordion-samara" ).accordion({
+            collapsible: true
+        });
+    } );
+
     const switchFilter = document.querySelector('#switch-filter');
     const filterLeft = document.querySelector('#filter-left');
     const closeLeftFilter = document.querySelector('#close-left-filter');
