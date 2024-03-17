@@ -54,6 +54,13 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Georgia";
+  font-display: swap;
+  src: url("../fonts/Georgia.woff") format("wpff"), url("../fonts/Georgia-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -118,6 +125,13 @@ a:hover {
   font: 700 32px/1 "Open Sans", normal;
   color: #000;
   margin-bottom: 20px;
+}
+
+.title-small {
+  font: 700 28px/1.14 "Open Sans", normal;
+  letter-spacing: -0.03em;
+  color: #000;
+  margin-bottom: 15px;
 }
 
 .subtitle {
@@ -1521,14 +1535,22 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 10px;
+  gap: 10px;
 }
 .delivery__btn {
   font-weight: 700;
   text-transform: uppercase;
+}
+.delivery__item {
+  padding: 30px 0;
+}
+.delivery__item:not(:last-child) {
+  border-bottom: 1px solid #AAAAAA;
 }
 .delivery__List {
   font: 400 18px/1.7 "Fira Sans", normal;
@@ -1546,6 +1568,66 @@ a:hover {
 .delivery__accordion-text {
   font: 400 16px/1.6 "HelveticaNeueCyr", sans-serif;
   color: #000;
+}
+.delivery__accordion-btn {
+  font: 700 24px/1.6 "Fira Sans", sans-serif;
+  color: #fff;
+  margin: 5px;
+}
+.delivery__accordion-btn:before {
+  content: "+ ";
+}
+.delivery__accordion-btn.ui-state-active:before {
+  content: "- ";
+}
+.delivery__list-link {
+  font-weight: 700;
+  font-size: 20px;
+}
+.delivery__services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+.delivery__services-tem {
+  display: inline-block;
+  -webkit-box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.11);
+          box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.11);
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+.delivery__services-tem img {
+  max-width: 100%;
+}
+.delivery__about {
+  padding: 20px 0;
+  border-bottom: 1px solid #aaa;
+}
+.delivery__text-italic {
+  font: italic 400 20px/1.6 "Georgia", italic;
+  color: #757575;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-left: 3px solid #c2c2c2;
+}
+.delivery__pay-all {
+  padding: 20px 0;
+}
+.delivery__grin-block {
+  font: 700 26px/1.2 "Open Sans", normal;
+  letter-spacing: -0.03em;
+  color: #fff;
+  display: inline-block;
+  background: #35b333;
+  padding: 5px 10px;
 }
 
 @media (max-width: 1600px) {
@@ -1793,6 +1875,12 @@ a:hover {
   }
   .products-serials__title {
     font-size: 24px;
+  }
+  .delivery__text-italic {
+    font-size: 18px;
+    line-height: 1.2;
+    padding-left: 7px;
+    margin-left: 7px;
   }
 }
 @media (max-width: 500px) {

@@ -182,8 +182,10 @@ document.addEventListener('DOMContentLoaded', function () {
     } );
 
     $( function() {
-        $( "#accordion-samara" ).accordion({
-            collapsible: true
+        $( ".delivery__accordion-wrap" ).accordion({
+            collapsible: true,
+            heightStyle: "content",
+            active: false
         });
     } );
 
