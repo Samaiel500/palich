@@ -1630,6 +1630,100 @@ a:hover {
   padding: 5px 10px;
 }
 
+.shops {
+  padding: 20px 0;
+}
+.shops__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shops-contacts {
+  min-height: 320px;
+  max-height: 60vh;
+  width: 40%;
+  overflow-y: auto;
+  margin: 0 5% 0 0;
+}
+.shops-contacts .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  border-radius: 16px;
+  width: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.75;
+}
+.shops-contacts .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #FFFFFF;
+}
+.shops-contacts__item {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 15px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.shops-contacts__item:hover {
+  background: #f4f4f4;
+}
+.shops-contacts__icon {
+  margin-top: 15px;
+}
+.shops-contacts__info {
+  width: 100%;
+}
+.shops-contacts__title {
+  font: 400 22px/1.3 "Fira Sans", normal;
+  color: #000;
+}
+.shops-contacts__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: 400 16px/1.25 "Fira Sans", normal;
+  color: #000;
+  margin-top: 5px;
+}
+.shops-contacts__tel {
+  font: 400 16px/1.25 "Fira Sans", normal;
+  color: #000;
+}
+
+.shops-map {
+  width: 55%;
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+}
+.shops-map__location {
+  font: 700 18px/1.1 "Fira Sans", normal;
+  color: #fff;
+  background: #a70230;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 10;
+}
+.shops-map__main-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1600px) {
   .header__text span,
   .header__link--mobile-none-xs {
@@ -1768,6 +1862,25 @@ a:hover {
             align-items: center;
     gap: 20px 0;
   }
+  .shops__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shops-contacts,
+  .shops-map {
+    width: 100%;
+  }
+  .shops-contacts {
+    margin: 0;
+  }
+  .shops-map {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767px) {
   .header__card {
@@ -1896,5 +2009,15 @@ a:hover {
   .products-serials__img {
     width: 100%;
     height: unset;
+  }
+  .shops-contacts__title {
+    font-size: 18px;
+  }
+  .shops-contacts__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px 0;
   }
 }

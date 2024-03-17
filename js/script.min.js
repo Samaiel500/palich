@@ -274,4 +274,6 @@ document.addEventListener('DOMContentLoaded', function () {
             countMinus();
         })
     }
+
+    $(".shops-contacts").mCustomScrollbar();
 })
