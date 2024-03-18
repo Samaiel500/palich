@@ -1962,6 +1962,27 @@ a:hover {
   right: -450px;
 }
 
+.list-action {
+  padding: 20px 0;
+}
+
+.sale-action {
+  padding: 20px 0;
+}
+.sale-action__block, .sale-action__wrap {
+  padding: 20px 0;
+}
+.sale-action__title {
+  font: 400 18px/1.7 "Fira Sans", normal;
+  color: #000;
+}
+.sale-action__list {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  gap: 20px;
+}
+
 @media (max-width: 1600px) {
   .header__text span,
   .header__link--mobile-none-xs {
@@ -2210,6 +2231,16 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .sale-action__list {
+    grid-template-columns: 280px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+  .sale-action__title {
+    text-align: center;
   }
 }
 @media (max-width: 590px) {
