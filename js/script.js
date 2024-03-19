@@ -276,4 +276,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     $(".shops-contacts").mCustomScrollbar();
+
+    $('.tel').mask('+7 (000) 000-00-00');
+
+    const btnFormAuth = document.querySelectorAll('.auth__btn');
+    const telFormAuth = document.querySelector('#auth-tel');
+    const errFormAuth = document.querySelector('.auth__form-error');
+
+    telFormAuth.addEventListener('input', function () {
+        console.log(this.value.length)
+    })
+
+    btnFormAuth.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (telFormAuth.value.length !== 17) {
+                errFormAuth.classList.add('active');
+                return;
+            }
+            errFormAuth.classList.remove('active');
+        })
+    })
 })
