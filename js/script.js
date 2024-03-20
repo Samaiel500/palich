@@ -243,6 +243,38 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    const club = new Swiper('.club-slider__swiper', {
+        // slidesPerView: 5,
+
+        pagination: {
+            el: '.club-slider__swiper-pagination',
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            575: {
+                slidesPerView: 3,
+            },
+            767: {
+                slidesPerView: 4,
+            },
+            991: {
+                slidesPerView: 5,
+            },
+        }
+    });
+
+    // const clubInfo = new Swiper('.club-slider-info__swiper', {
+    //     direction: 'vertical',
+    //     slidesPerView: 3,
+    //
+    //     pagination: {
+    //         el: '.club-slider-info__swiper-pagination',
+    //     },
+    // });
+
     //Счетчик продукатов для добавления в корзину
     const productMinus = document.querySelector('.products__info-count-minus');
     const productPlus = document.querySelector('.products__info-count-plus');
@@ -283,18 +315,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const telFormAuth = document.querySelector('#auth-tel');
     const errFormAuth = document.querySelector('.auth__form-error');
 
-    telFormAuth.addEventListener('input', function () {
-        console.log(this.value.length)
-    })
-
-    btnFormAuth.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            if (telFormAuth.value.length !== 17) {
-                errFormAuth.classList.add('active');
-                return;
-            }
-            errFormAuth.classList.remove('active');
+    if (btnFormAuth && telFormAuth && errFormAuth) {
+        btnFormAuth.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (telFormAuth.value.length !== 17) {
+                    errFormAuth.classList.add('active');
+                    return;
+                }
+                errFormAuth.classList.remove('active');
+            })
         })
-    })
+    }
 })
