@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const mainSlider = new Swiper('.main-slider__swiper', {
+        speed: 700,
         loop: true,
         autoplay: true,
 
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const mainSliderBottom = new Swiper('.main-slider--bottom .main-slider__swiper', {
+        speed: 700,
         loop: true,
         autoplay: true,
 
@@ -69,6 +71,14 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         breakpoints: {
+            320: {
+                slidesPerView: 1,
+                centeredSlides: true,
+            },
+            600: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            },
             800: {
                 slidesPerView: 3,
             },
