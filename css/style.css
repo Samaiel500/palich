@@ -286,6 +286,15 @@ a:hover {
   list-style: disc;
 }
 
+.text {
+  margin-bottom: 25px;
+}
+.text__item {
+  font: 700 16px/1.6 "Open Sans", noraml;
+  color: #000;
+  margin-bottom: 25px;
+}
+
 .header__container {
   max-width: 1780px;
   width: 100%;
@@ -2818,6 +2827,12 @@ a:hover {
   .products-serials--desc {
     display: none;
   }
+  .expo__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .expo__list {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 616px) {
   .action-products__wrap {
@@ -2959,6 +2974,9 @@ a:hover {
   .action-coupon__info {
     padding: 20px;
   }
+  .expo__grid {
+    grid-template-columns: 1fr;
+  }
 }
 .my-card {
   margin-bottom: 60px;
@@ -2990,6 +3008,25 @@ a:hover {
   bottom: 0;
   background: #f2f4f5;
   position: absolute;
+}
+
+.expo__list {
+  margin-bottom: 25px;
+  padding-left: 40px;
+}
+.expo__list-link {
+  font: 400 18px/1.7 "Fira Sans", sans-serif;
+}
+.expo__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 25px;
+}
+
+.personal-data__subtitle {
+  font: 700 18px/1.1 "Open Sans", normal;
+  color: #000;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 1600px) {
@@ -3319,6 +3356,12 @@ a:hover {
   .products-serials--desc {
     display: none;
   }
+  .expo__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .expo__list {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 616px) {
   .action-products__wrap {
@@ -3459,5 +3502,8 @@ a:hover {
   }
   .action-coupon__info {
     padding: 20px;
+  }
+  .expo__grid {
+    grid-template-columns: 1fr;
   }
 }
