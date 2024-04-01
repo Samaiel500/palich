@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         breakpoints: {
-            768: {
+            800: {
                 slidesPerView: 3,
             },
         }
@@ -74,10 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
             320: {
                 slidesPerView: 1,
                 centeredSlides: true,
-            },
-            600: {
-                slidesPerView: 2,
-                centeredSlides: false,
             },
             800: {
                 slidesPerView: 3,
