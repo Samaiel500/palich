@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Fira Sans";
   src: url("../fonts/FiraSans-Italic.eot");
@@ -1246,6 +1247,14 @@ a:hover {
   gap: 30px;
   padding: 0 0 20px 0;
 }
+.catalog__link--active {
+  background: #ffd84f;
+  color: #950a2b;
+}
+.catalog__count-prod {
+  font: 600 15px/1 "Open Sans", normal;
+  color: #999;
+}
 
 .catalog-filter {
   padding: 20px 0;
@@ -1348,6 +1357,50 @@ a:hover {
   height: 6px;
   border-radius: 100%;
   background: #950a2b;
+}
+.catalog-filter__checkbox-row {
+  position: relative;
+  margin-bottom: 10px;
+}
+.catalog-filter__input-hidden {
+  display: none;
+}
+.catalog-filter__checkbox {
+  content: "";
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: #fdf0e2;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.catalog-filter__input-hidden:checked + .catalog-filter__checkbox {
+  background: #950a2b;
+}
+.catalog-filter__input-hidden:checked + .catalog-filter__checkbox:before {
+  content: "✓";
+  width: 16px;
+  height: 16px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+.catalog-filter__checkbox-label {
+  padding-left: 25px;
+  cursor: pointer;
 }
 
 .catalog-mobile-filter {
@@ -1625,8 +1678,31 @@ a:hover {
   gap: 0 15px;
   margin-bottom: 30px;
 }
+.products__info-row--price {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .products__price {
   font: 700 46px/1.3 "Open Sans", normal;
+}
+.products__price-old {
+  font: 400 46px/1.3 "Open Sans", normal;
+  color: #aaaaaa;
+  position: relative;
+}
+.products__price-old:after {
+  content: "";
+  position: absolute;
+  background: #aaaaaa;
+  width: 90%;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: translate(-50%, -50%) rotate(-25deg);
+      -ms-transform: translate(-50%, -50%) rotate(-25deg);
+          transform: translate(-50%, -50%) rotate(-25deg);
 }
 .products__quantity {
   font: 700 17px/1.3 "Open Sans", normal;
@@ -3011,6 +3087,9 @@ a:hover {
   .card__name {
     font-size: 16px;
   }
+  .catalog__count-prod {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .arrow-wrapper {
@@ -3061,13 +3140,15 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .products__quantity {
     position: absolute;
     top: 5px;
     left: 5px;
   }
-  .products__price {
+  .products__price, .products__price-old {
     font-size: 28px;
   }
   .products__info-count {
@@ -3085,8 +3166,17 @@ a:hover {
   .products__info-availability-text {
     font-size: 16px;
   }
+  .products__info-row {
+    margin-bottom: 0;
+  }
   .breadcrumbs {
     display: none;
+  }
+  .header-middle__mobile-menu-list-wrap {
+    width: 300px;
+  }
+  .header-middle__mobile-menu-link span {
+    white-space: unset;
   }
 }
 .my-card {
@@ -3646,6 +3736,9 @@ a:hover {
   .card__name {
     font-size: 16px;
   }
+  .catalog__count-prod {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .arrow-wrapper {
@@ -3696,13 +3789,15 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .products__quantity {
     position: absolute;
     top: 5px;
     left: 5px;
   }
-  .products__price {
+  .products__price, .products__price-old {
     font-size: 28px;
   }
   .products__info-count {
@@ -3720,7 +3815,16 @@ a:hover {
   .products__info-availability-text {
     font-size: 16px;
   }
+  .products__info-row {
+    margin-bottom: 0;
+  }
   .breadcrumbs {
     display: none;
+  }
+  .header-middle__mobile-menu-list-wrap {
+    width: 300px;
+  }
+  .header-middle__mobile-menu-link span {
+    white-space: unset;
   }
 }

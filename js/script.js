@@ -181,19 +181,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    $( function() {
-        $( "#accordion-filter" ).accordion({
-            collapsible: true
-        });
-    } );
 
-    $( function() {
-        $( ".delivery__accordion-wrap" ).accordion({
-            collapsible: true,
-            heightStyle: "content",
-            active: false
-        });
-    } );
+    $( "#accordion-filter" ).accordion({
+        collapsible: true,
+        heightStyle: "content",
+    });
+
+    $(".ui-accordion-content").show();
+
+
+    $( ".delivery__accordion-wrap" ).accordion({
+        collapsible: true,
+        heightStyle: "content",
+        active: false
+    });
 
     const switchFilter = document.querySelector('#switch-filter');
     const filterLeft = document.querySelector('#filter-left');
@@ -250,8 +251,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const club = new Swiper('.club-slider__swiper', {
-        // slidesPerView: 5,
-
         pagination: {
             el: '.club-slider__swiper-pagination',
         },
