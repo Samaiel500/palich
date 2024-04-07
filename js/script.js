@@ -314,6 +314,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $(".shops-contacts").mCustomScrollbar();
 
+    $(".popup-catalog__wrap").mCustomScrollbar();
+
     $('.tel').mask('+7 (000) 000-00-00');
 
     const btnFormAuth = document.querySelectorAll('.auth__btn');
@@ -332,4 +334,58 @@ document.addEventListener('DOMContentLoaded', function () {
             })
         })
     }
+
+    Fancybox.bind("[data-fancybox]", {
+        trapFocus: false,
+        autoFocus: false,
+    });
+
+    const popupSliderMainNav = new Swiper('.popup-main-slider__swiper-nav', {
+        direction: 'horizontal',
+        slidesPerView: 3,
+        spaceBetween: 10,
+        updateOnWindowResize: true,
+
+        breakpoints: {
+            800: {
+                direction: 'vertical',
+            },
+        }
+    });
+
+    const popupSliderMain = new Swiper('.popup-main-slider__swiper', {
+        updateOnWindowResize: true,
+
+        thumbs: {
+            swiper: popupSliderMainNav,
+        },
+
+        navigation: {
+            nextEl: '.popup-main-slider__swiper-button-next',
+            prevEl: '.popup-main-slider__swiper-button-prev',
+        },
+    });
+
+    const popupOther = new Swiper('.popup-other-slider__swiper', {
+        // slidesPerView: 1,
+        updateOnWindowResize: true,
+
+        navigation: {
+            nextEl: '.popup-other-slider__swiper-button-next',
+            prevEl: '.popup-other-slider__swiper-button-prev',
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            500: {
+                slidesPerView: 2,
+            },
+            800: {
+                slidesPerView: 3,
+            },
+        }
+    });
+
 })
